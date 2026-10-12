@@ -49,6 +49,7 @@ que ce sous-dossier. On ne teste pas un checkout physiquement limité à remoteP
 Importer avec ces champs :
 
 ```text
+Remote URL: git@github.com:qcastel/dataiku-large-repo.git
 Checkout: codex/sc247625-tour-20261012-limits
 Path in Git repository: fixtures/scope-small
 Local target path: tour-small
@@ -64,6 +65,7 @@ Denied files: vide
 Importer :
 
 ```text
+Remote URL: git@github.com:qcastel/dataiku-large-repo.git
 Checkout: codex/sc247625-tour-20261012-limits
 Path in Git repository: fixtures/scope-soft
 Local target path: tour-soft
@@ -92,6 +94,7 @@ Réduire la fenêtre à environ 1024 × 600 pendant ce test :
 Importer :
 
 ```text
+Remote URL: git@github.com:qcastel/dataiku-large-repo.git
 Checkout: codex/sc247625-tour-20261012-limits
 Path in Git repository: fixtures/scope-hard
 Local target path: tour-hard
@@ -118,6 +121,8 @@ Ouvrir la console du navigateur, puis essayer deux nouvelles importations sur la
 branche limits, avec Denied files vide et des destinations locales distinctes :
 
 ```text
+Remote URL: git@github.com:qcastel/dataiku-large-repo.git
+Checkout: codex/sc247625-tour-20261012-limits
 Path in Git repository: missing-directory
 Local target path: tour-invalid-directory
 ```
@@ -125,6 +130,8 @@ Local target path: tour-invalid-directory
 Puis :
 
 ```text
+Remote URL: git@github.com:qcastel/dataiku-large-repo.git
+Checkout: codex/sc247625-tour-20261012-limits
 Path in Git repository: fixtures/scope-small/code.py
 Local target path: tour-invalid-file
 ```
@@ -140,6 +147,7 @@ Local target path: tour-invalid-file
 Premier cas :
 
 ```text
+Remote URL: git@github.com:qcastel/dataiku-large-repo.git
 Checkout: codex/sc247625-tour-20261012-patterns
 Path in Git repository: cases/brackets
 Local target path: tour-brackets
@@ -163,6 +171,7 @@ Complément : refaire exactement le même test pour :
 Importer sur la branche patterns, en gardant les exclusions par défaut :
 
 ```text
+Remote URL: git@github.com:qcastel/dataiku-large-repo.git
 Checkout: codex/sc247625-tour-20261012-patterns
 Path in Git repository: deps
 Local target path: tour-deps
@@ -200,6 +209,7 @@ remote-update comme Checkout dans DSS : elle sert à préparer la divergence.
 Importer d'abord :
 
 ```text
+Remote URL: git@github.com:qcastel/dataiku-large-repo.git
 Checkout: codex/sc247625-tour-20261012-sync
 Path in Git repository: library
 Local target path: tour-sync
