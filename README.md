@@ -1,6 +1,6 @@
 # Test manuel SC-247625 — tour avant review Jiffy
 
-Préparé le 12 octobre 2026 pour la PR 41785, code DSS `03bba2e7a8eb`.
+Préparé le 12 octobre 2026 pour la PR 41785 ; actualisé pour les correctifs de précision des tailles de la dernière revue.
 
 Prévoir environ 30–45 minutes pour le parcours principal. Les cas marqués
 « complément » peuvent être faits après. Cocher les résultats au fur et à mesure.
@@ -25,8 +25,10 @@ git.clone.hard.limit.mb=10
 
 Noter les anciennes valeurs pour les restaurer à la fin. Les fichiers synthétiques
 sont compressibles : on teste les tailles des fichiers présents sur disque,
-pas le volume réel du transfert réseau. L'affichage arrondit à 1 MB minimum,
-y compris pour un fichier de quelques octets.
+pas le volume réel du transfert réseau. Les tailles sont affichées en KB/MB/GB,
+sans minimum artificiel de 1 MB. Les limites sont comparées en octets ; la valeur
+exacte est accessible en survolant une taille. Charger le backend et le frontend
+contenant ce correctif ensemble pour retester.
 
 | Usage | Valeur exacte du champ Checkout |
 | --- | --- |
@@ -231,8 +233,22 @@ Dans DSS, ajouter à la fin de `code.py` :
 
 Créer également un fichier local `denied.txt` dans `tour-sync`, contenu :
 
-```text
-LOCAL DENIED MUST SURVIVE
+ui: now that I relook at it, the modal is too high, if we have an error message above, it is very hard to do anything on a smaller screen
+<img width="851" height="821" alt="Image" src="https://github.com/user-attachments/assets/d94a58bc-c572-404e-a2b2-2b3fb6be1c77" />
+
+ui: we still have an unhandled rejection on the wrong path (ok kind of nitpick, just ot very clean)
+<img width="1570" height="830" alt="Image" src="https://github.com/user-attachments/assets/f0a73474-3704-429b-bea0-e190d82be3ae" />
+
+paths mismath:
+- set a soft limit to 2 MB
+- clone https://github.com/dataiku/dataiku-api-client-python
+- set a remote path to `dataikuapi`
+- set a local path to whatever
+- I have the list below
+
+<img width="843" height="708" alt="Image" src="https://github.com/user-attachments/assets/40e1ad23-edc4-4da9-9f79-c758d0c33d96" />
+
+I would have expected `git reference path` to be `dataikuapi` and to see directories **inside** `dataikuapi`, not outside
 ```
 
 Complément pour couvrir le même bug à la racine : avant la commande ci-dessous,
