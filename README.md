@@ -233,22 +233,8 @@ Dans DSS, ajouter à la fin de `code.py` :
 
 Créer également un fichier local `denied.txt` dans `tour-sync`, contenu :
 
-ui: now that I relook at it, the modal is too high, if we have an error message above, it is very hard to do anything on a smaller screen
-<img width="851" height="821" alt="Image" src="https://github.com/user-attachments/assets/d94a58bc-c572-404e-a2b2-2b3fb6be1c77" />
-
-ui: we still have an unhandled rejection on the wrong path (ok kind of nitpick, just ot very clean)
-<img width="1570" height="830" alt="Image" src="https://github.com/user-attachments/assets/f0a73474-3704-429b-bea0-e190d82be3ae" />
-
-paths mismath:
-- set a soft limit to 2 MB
-- clone https://github.com/dataiku/dataiku-api-client-python
-- set a remote path to `dataikuapi`
-- set a local path to whatever
-- I have the list below
-
-<img width="843" height="708" alt="Image" src="https://github.com/user-attachments/assets/40e1ad23-edc4-4da9-9f79-c758d0c33d96" />
-
-I would have expected `git reference path` to be `dataikuapi` and to see directories **inside** `dataikuapi`, not outside
+```text
+LOCAL DENIED MUST SURVIVE
 ```
 
 Complément pour couvrir le même bug à la racine : avant la commande ci-dessous,
