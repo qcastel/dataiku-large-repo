@@ -1,0 +1,45 @@
+{
+  "repository": "git@github.com:qcastel/dataiku-large-repo.git",
+  "guide": "https://github.com/qcastel/dataiku-large-repo/blob/codex/sc247625-tour-20261012-limits/README.md",
+  "limits_commit": "e0fa7443d0571dac13fbdf2b5acb930ac50f184b",
+  "branches": {
+    "patterns": {
+      "branch": "codex/sc247625-tour-20261012-patterns",
+      "commit": "562362f6c30efdf676b5e126b2b1d5875954a899",
+      "file_sizes_mib": {
+        "cases/brackets/file[1].txt": 6,
+        "cases/brackets/file1.txt": 2,
+        "cases/star/file*.txt": 6,
+        "cases/star/fileABC.txt": 2,
+        "cases/question/file?.txt": 6,
+        "cases/question/fileA.txt": 2,
+        "deps/a/node_modules/dependency.txt": 8,
+        "deps/b/node_modules/dependency.txt": 8,
+        "!important.txt": 6,
+        "#notes.txt": 6,
+        "fileC.toto": 2,
+        "plus+name.txt": 2,
+        "space name.txt": 2,
+        "ordinary.txt": 2
+      }
+    },
+    "sync": {
+      "branch": "codex/sc247625-tour-20261012-sync",
+      "initial_commit": "1f9f4f733c790c0d400768b1b3ff1a5d92bdf77b"
+    },
+    "remote_update": {
+      "branch": "codex/sc247625-tour-20261012-remote-update",
+      "commit": "d91faaa5279f53384d42756404ca2021e1115427"
+    },
+    "limits": {
+      "branch": "codex/sc247625-tour-20261012-limits",
+      "file_sizes_mib": {
+        "outside-large/outside.payload": 40,
+        "fixtures/scope-soft/large.payload": 6,
+        "fixtures/scope-soft/cache/ignored.payload": 8,
+        "fixtures/scope-hard/part-a.payload": 6,
+        "fixtures/scope-hard/part-b.payload": 6
+      }
+    }
+  }
+}
