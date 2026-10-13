@@ -1,0 +1,18 @@
+{
+  "purpose": "Manual validation of uncommitted PR 41785 round10 fixes",
+  "files_bytes": {
+    "fixtures/ui/large.payload": 2097152,
+    "fixtures/ui/govern_client.py": 23552,
+    "fixtures/ui/govern/code.py": 1500,
+    "fixtures/ui/small.txt": 1024,
+    "fixtures/ui/empty.txt": 0,
+    "fixtures/ui/file[1].txt": 2048,
+    "fixtures/ui/file1.txt": 512,
+    "fixtures/soft-exact/payload.dat": 1048576,
+    "fixtures/soft-plus-one/payload.dat": 1048577,
+    "fixtures/hard-exact/payload.dat": 3145728,
+    "fixtures/hard-plus-one/payload.dat": 3145729,
+    "fixtures/empty/empty.txt": 0,
+    "outside-import/outside.payload": 8388608
+  }
+}
